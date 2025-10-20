@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+markdown-it-py
+rich
+typer[all]
+black
+isort
