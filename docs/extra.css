@@ -1,0 +1,41 @@
+:root {
+  --md-primary-fg-color: #6366f1; /* indigo-500 */
+  --md-accent-fg-color: #f59e0b; /* amber-500 */
+}
+
+h2, h3, h4 {
+  border-left: 4px solid var(--md-accent-fg-color);
+  padding-left: 0.5em;
+}
+
+code {
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+}
+
+.md-typeset a {
+  color: var(--md-accent-fg-color);
+}
+
+.badge {
+  display: inline-block;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8em;
+  color: #fff;
+  margin-left: 0.4rem;
+}
+.badge-python { background: #3776ab; }
+.badge-js { background: #f7df1e; color: #000; }
+.badge-java { background: #f89820; }
+.md-content {
+  background: linear-gradient(180deg, rgba(99,102,241,0.05) 0%, rgba(0,0,0,0) 100%);
+  border-radius: 8px;
+  padding: 1rem 2rem;
+}
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
