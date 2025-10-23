@@ -4,53 +4,54 @@ hide:
   - toc
 ---
 
-# 🤖 AI-Enhanced Documentation Generator
+<div class="landing-page">
 
-> _Generate beautiful, intelligent documentation for any Python, JavaScript, or Java project — instantly._
+  <!-- 🌟 HERO SECTION -->
+  <section class="hero-grid">
+    <div class="hero-left">
+      <h1>🚀 <span class="gradient-text">AI-Enhanced Docs</span> for Modern Codebases</h1>
+      <p>
+        Automatically generate beautiful, intelligent documentation for your 
+        <strong>Python</strong>, <strong>JavaScript</strong>, and <strong>Java</strong> projects — 
+        powered by AI that actually understands your code.
+      </p>
 
----
+      <div class="hero-buttons">
+        <a href="api/" class="md-button md-button--primary">View API Reference</a>
+        <a href="https://github.com/ayeshaArif6/AI-Enhanced-Documentation-Generator" class="md-button md-button--secondary">View on GitHub</a>
+      </div>
+    </div>
 
-<div align="center">
+    <div class="hero-right">
+      <!-- 🖼️ Placeholder preview cards -->
+      <div class="preview-card"><img src="images/placeholder1.png" alt="preview 1"></div>
+      <div class="preview-card"><img src="images/placeholder2.png" alt="preview 2"></div>
+      <div class="preview-card"><img src="images/placeholder3.png" alt="preview 3"></div>
+    </div>
 
-[Get Started →](api.md){ .md-button .md-button--primary }
-[View on GitHub ↗](https://github.com/<your-username>/AI-Enhanced-Documentation-Generator){ .md-button }
+  </section>
 
-</div>
-
----
-
-## ✨ Why You’ll Love It
-
-<div class="grid cards" markdown>
-
-- 🧠 **AI-Powered Docstrings**  
-  Automatically expands or rewrites docstrings using GPT for clarity & professionalism.
-
-- 🌐 **Multi-Language Support**  
-  Parses Python 🐍, JavaScript 🟨, and Java ☕ projects seamlessly.
-
-- 🕶️ **Modern Dark UI**  
-  Sleek Material theme with dark/light mode toggle and responsive design.
-
-- 🚀 **One-Command Deploy**  
-  Publish to GitHub Pages instantly and share your docs with the world.
-
-</div>
-
----
-
-## ⚙️ How It Works
-
-1. 🧩 Scan your codebase → parses functions & classes
-2. ✍️ AI enhances docstrings for clarity
-3. 📘 Generates Markdown files (`index.md`, `api.md`)
-4. 🎨 Renders them with MkDocs Material
-
----
-
-<div align="center">
-
-📄 **Check out the [API Reference](api.md)** to see generated documentation  
-or [try your own project](https://github.com/<your-username>/AI-Enhanced-Documentation-Generator)!
+  <!-- 💡 FEATURES SECTION -->
+  <section class="features">
+    <h2>✨ Why Developers Love It</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <h3>⚙️ Multi-Language Support</h3>
+        <p>Generate documentation for Python, JavaScript, and Java — all in one workflow.</p>
+      </div>
+      <div class="feature">
+        <h3>🤖 AI-Generated Summaries</h3>
+        <p>Smart analysis to describe your codebase like a human technical writer.</p>
+      </div>
+      <div class="feature">
+        <h3>🎨 Polished Markdown Output</h3>
+        <p>Styled with MkDocs Material — responsive, dark-mode-ready, and easy to customize.</p>
+      </div>
+      <div class="feature">
+        <h3>⚡ Instant Deployment</h3>
+        <p>Publish your documentation instantly with <code>mkdocs serve</code> or GitHub Pages.</p>
+      </div>
+    </div>
+  </section>
 
 </div>

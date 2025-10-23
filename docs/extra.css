@@ -39,3 +39,374 @@ code {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1.5rem;
 }
+/* ---------- HERO SECTION ---------- */
+.hero-banner.clean {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(145deg, #1e1b4b 0%, #111827 60%, #0f172a 100%);
+  padding: 6rem 1.5rem 8rem;
+  color: white;
+  overflow: hidden;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 700px;
+  margin-bottom: 3rem;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #60a5fa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons .md-button {
+  margin: 0.4rem;
+  font-weight: 600;
+  padding: 0.8rem 1.4rem;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.md-button--primary {
+  background-color: #f43f5e !important;
+  color: white !important;
+}
+
+.md-button--primary:hover {
+  background-color: #fb7185 !important;
+  transform: translateY(-3px);
+}
+
+.md-button--secondary {
+  border: 2px solid #60a5fa !important;
+  color: #60a5fa !important;
+  background: transparent !important;
+}
+
+.md-button--secondary:hover {
+  background-color: #60a5fa !important;
+  color: #0f172a !important;
+}
+
+.hero-image img {
+  width: 750px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  filter: brightness(0.9);
+  transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
+}
+/* STICKY / SHRINKING NAVBAR */
+.md-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.4s ease;
+}
+
+.md-header[data-md-state="shadow"] {
+  backdrop-filter: blur(18px);
+  background: rgba(25, 31, 52, 0.85) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #e0e7ff !important;
+  transition: transform 0.4s ease;
+}
+
+[data-md-state="shadow"] .md-header__title {
+  transform: scale(0.95);
+}
+
+.md-header-nav__link:hover {
+  color: #fbbf24 !important; /* amber accent */
+  background: rgba(251, 191, 36, 0.1);
+}
+
+.md-header__button:hover {
+  color: #f472b6 !important;
+  transform: scale(1.15);
+}
+/* ---------- MODERN NAVBAR (GLASSY, COMPACT, SCROLL-AWARE) ---------- */
+.md-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(24, 27, 50, 0.85) !important;
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s ease;
+  height: 70px;
+}
+
+/* when scrolling (Material adds data-md-state="shadow") */
+.md-header[data-md-state="shadow"] {
+  background: rgba(17, 20, 36, 0.9) !important;
+  height: 58px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+/* logo + title */
+.md-header__title {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #e0e7ff !important;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+[data-md-state="shadow"] .md-header__title {
+  color: #c7d2fe !important;
+  transform: scale(0.97);
+  opacity: 0.9;
+}
+
+/* nav links */
+.md-header-nav__link {
+  color: #e2e8f0 !important;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.md-header-nav__link:hover {
+  background: rgba(99, 102, 241, 0.15);
+  color: #f472b6 !important;
+}
+
+/* search bar */
+.md-search__form {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.md-search__form:hover {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 2px rgba(147, 197, 253, 0.4);
+}
+
+.md-search__input {
+  color: #f1f5f9 !important;
+}
+
+.md-search__icon {
+  color: #93c5fd !important;
+}
+
+/* toggle + icons */
+.md-header__button {
+  color: #c7d2fe !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.md-header__button:hover {
+  color: #f472b6 !important;
+  transform: scale(1.2);
+}
+
+/* subtle bottom glow divider */
+.md-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(99,102,241,0.2), rgba(236,72,153,0.2));
+}
+/* make nav tabs blend with header */
+.md-tabs {
+  background: transparent !important;
+  border-top: none !important;
+  box-shadow: none !important;
+  position: relative;
+  z-index: 999;
+  margin-top: -10px; /* tuck closer to header */
+}
+
+.md-tabs__link {
+  color: #e2e8f0 !important;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.md-tabs__link:hover {
+  background: rgba(99,102,241,0.15);
+  color: #f472b6 !important;
+}
+
+.md-tabs__link--active {
+  color: #fbbf24 !important;
+  font-weight: 600;
+}
+.md-header__inner {
+  align-items: center;
+  padding-top: 0.4rem;
+}
+/* -------- LANDING PAGE (Pixelgrade style) -------- */
+.landing-page {
+  background: linear-gradient(120deg, #2e026d 0%, #15162c 80%);
+  padding: 4rem 2rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* HERO GRID */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 6rem;
+}
+
+.hero-left h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #60a5fa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-left p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons a {
+  margin-right: 0.8rem;
+}
+
+/* RIGHT PREVIEWS */
+.hero-right {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.preview-card {
+  background: #1f1b40;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preview-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.preview-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* FEATURES GRID */
+.features {
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(90deg, #f9a8d4, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+/* ===== FULL-WIDTH LANDING PAGE FIX ===== */
+
+/* Remove MkDocs inner page frame & padding for the landing page */
+.md-main__inner,
+.md-content,
+.md-content__inner {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+}
+
+/* Remove the outer grey container and stretch landing page edge-to-edge */
+.md-main {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Expand landing section to full window width */
+.landing-page {
+  width: 100vw;
+  margin: 0;
+  padding: 6rem 5vw;
+  background: linear-gradient(120deg, #2e026d 0%, #15162c 80%);
+  color: #fff;
+}
+
+/* Optional: smooth transition for when you scroll past the hero */
+.md-main[data-md-state="shadow"] {
+  background: none !important;
+}
